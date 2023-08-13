@@ -18,6 +18,7 @@ import org.opencv.imgproc.Imgproc;
  * This is a demo program showing the use of OpenCV to do vision processing. The image is acquired
  * from the Axis camera, then a rectangle is put on the image and sent to the dashboard. OpenCV has
  * many methods for different types of processing.
+ * @deprecated AxisCamera is deprecated, use HTTPCamera instead.
  */
 public class Robot extends TimedRobot {
   Thread m_visionThread;

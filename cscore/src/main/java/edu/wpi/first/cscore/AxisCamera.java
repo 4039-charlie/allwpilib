@@ -23,7 +23,9 @@ public class AxisCamera extends HttpCamera {
    *
    * @param name Source name (arbitrary unique identifier)
    * @param host Camera host IP or DNS name (e.g. "10.x.y.11")
+   * @deprecated Use HTTPCamera instead
    */
+  @Deprecated(since = "2024", forRemoval = true)
   public AxisCamera(String name, String host) {
     super(name, hostToUrl(host), HttpCameraKind.kAxis);
   }
@@ -33,7 +35,9 @@ public class AxisCamera extends HttpCamera {
    *
    * @param name Source name (arbitrary unique identifier)
    * @param hosts Array of Camera host IPs/DNS names
+   * @deprecated Use HTTPCamera instead
    */
+  @Deprecated(since = "2024", forRemoval = true)
   public AxisCamera(String name, String[] hosts) {
     super(name, hostToUrl(hosts), HttpCameraKind.kAxis);
   }
